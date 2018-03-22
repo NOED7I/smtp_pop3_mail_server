@@ -16,3 +16,8 @@ touch mailboxes/wudao.mbox
 3. set outgoing protocol as SMTP, port *2500*, None for SSL and No authentication  
 4. both incoming and outgoing server name are set to *localhost*
 ### write and read emails among these mailboxes
++ through thunderbird
++ through tests inside ./test
++ through telnet localhost *port* in terminal and protocol command
+
+
