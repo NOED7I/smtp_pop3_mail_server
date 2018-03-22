@@ -1,23 +1,18 @@
-Full name:  Wudao Ling
-SEAS login: wudao
+# Upenn CIS505 HW2  
+A multi-thread mail server with SMTP protocol for transmission and POP3 protocol for retrieve.  
 
-Which features did you implement? 
-  (list features, or write 'Entire assignment')
-  Entire assignment
+## Syntax
+./smtp [-p port] [-a] [-v] <mailboxes directory>   
+./pop3 [-p port] [-a] [-v] <mailboxes directory>  
+-p followed by port number, -a is the flag to return author name, -v is the flag that enable information for debug
 
-Did you complete any extra-credit tasks? If so, which ones?
-  (list extra-credit tasks)
-  N/A
-
-Did you personally write _all_ the code you are submitting
-(other than code from the course web page)?
-  [x] Yes
-  [ ] No
-
-Did you copy any code from the Internet, or from classmates?
-  [ ] Yes
-  [x] No
-
-Did you collaborate with anyone on this assignment?
-  [ ] Yes
-  [x] No
+## Usage
+### create mailboxes in terminal
+mkdir mailboxes
+touch mailboxes/wudao.mbox
+### set up thunderbird account and outgoing server
+1. create account with *@localhost* and password *cis505*  
+2. set incoming protocol as POP3, port *11000*, None for SSL and Normal Password for authentication  
+3. set outgoing protocol as SMTP, port *2500*, None for SSL and No authentication  
+4. both incoming and outgoing server name are set to *localhost*
+### write and read emails among these mailboxes
