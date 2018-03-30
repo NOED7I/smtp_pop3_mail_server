@@ -2,8 +2,8 @@
 A multi-thread mail server with SMTP protocol for transmission and POP3 protocol for retrieve.  
 
 ## Syntax
-./smtp [-p port] [-a] [-v] <mailboxes directory>   
-./pop3 [-p port] [-a] [-v] <mailboxes directory>  
+./smtp [-p port] [-a] [-v] [mailboxes directory]   
+./pop3 [-p port] [-a] [-v] [mailboxes directory]  
 -p followed by port number, -a is the flag to return author name, -v is the flag that enable information for debug
 
 ## Usage
